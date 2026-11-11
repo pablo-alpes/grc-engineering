@@ -1,0 +1,1 @@
+test connection to AWS services via IAM account: aws sts get-caller-identity --profile default

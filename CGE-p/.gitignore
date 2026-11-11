@@ -1,0 +1,17 @@
+cat > .gitignore << 'EOF'
+# Terraform working files (never publish these)
+.terraform/
+#provider dependencies
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+#creds
+*.tfvars
+#binaries from plan
+tfplan
+*.tfplan
+crash.log
+
+# OS noise
+.DS_Store
+EOF
